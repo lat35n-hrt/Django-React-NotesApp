@@ -1,7 +1,7 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 from .models import Note
 
-class NoteSerializer(ModelSerializer):
+class NoteSerializer(serializers.ModelSerializer):
     class Meta:
-        modek = Note
+        model = Note
         fields = '__all__'
